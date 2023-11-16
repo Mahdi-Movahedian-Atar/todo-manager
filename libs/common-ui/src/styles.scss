@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//TextBox----------------------------------------------------------------
+
+.dx-texteditor.dx-editor-outlined {
+  @apply bg-gradient-to-br bg-primary-middle from-primary-light dark:from-primary-dark hover:bg-accent-middle;
+  @apply border-2 border-solid rounded border-secondary-light dark:border-secondary-dark
+  rounded-tl-2xl rounded-br-2xl;
+  @apply transition duration-500 transition-colors;
+}
+
+.dx-texteditor.dx-state-focused.dx-editor-outlined {
+  @apply border-accent-primary bg-accent-primary;
+  @apply transition ease-in-out duration-500 transition-colors;
+}
+
+.dx-texteditor.dx-editor-outlined.danger{
+  @apply border-danger-primary bg-danger-secondary animate-shake;
+}
+
+.dx-texteditor.dx-editor-underlined {
+  @apply bg-gradient-to-br from-primary-light dark:from-primary-dark bg-opacity-0
+  hover:bg-accent-middle hover:bg-opacity-100;
+  @apply border-0 rounded rounded-tl-2xl rounded-br-2xl;
+  @apply transition duration-500 transition-colors;
+}
+
+.dx-texteditor.dx-state-focused.dx-editor-underlined {
+  @apply bg-accent-primary bg-opacity-100;
+  @apply bg-accent-primary;
+  @apply transition ease-in-out duration-500 transition-colors;
+}
+
+.dx-texteditor.dx-editor-underlined.danger {
+  @apply bg-danger-primary animate-shake;
+}
+
+//Button----------------------------------------------------------------
+
+.dx-button-mode-contained.dx-button-default{
+  @apply border-0 bg-gradient-to-br from-accent-primary bg-accent-middle border-opacity-0;
+  @apply hover:bg-accent-secondary active:from-accent-middle;
+  @apply text-text-light font-semibold active:text-text-dark;
+}
+
+.dx-button-mode-contained.dx-button-danger{
+  @apply border-0 bg-gradient-to-br from-danger-primary bg-danger-middle border-opacity-0;
+  @apply hover:bg-danger-secondary active:from-danger-middle;
+  @apply text-text-light font-semibold active:text-text-dark;
+}
+
+.dx-button{
+  @apply border-2 rounded rounded-tl-2xl rounded-br-2xl;
+  @apply transition duration-150 transition-colors;
+}
+
+.dx-fa-button.dx-fa-button-main .dx-overlay-content{
+  @apply bg-gradient-to-br bg-primary-dark dark:bg-primary-light from-secondary-middle;
+  @apply transition duration-150 transition-colors;
+}
+
+.dx-fa-button.dx-fa-button-main .dx-overlay-content.dx-state-hover{
+  @apply bg-gradient-to-br bg-accent-primary from-secondary-middle;
+  @apply transition duration-150 transition-colors;
+}
+
+.dx-fa-button.dx-fa-button-main .dx-overlay-content.dx-state-active{
+  @apply bg-gradient-to-br bg-accent-middle from-secondary-middle;
+  @apply transition duration-150 transition-colors;
+}
+
+//PlaceHolder----------------------------------------------------------------
+
+.dx-placeholder{
+  @apply text-placeholderText-light dark:text-placeholderText-dark ml-1;
+}
+
+.dx-texteditor-input{
+  @apply ml-1;
+}
+
+.dx-textarea .dx-texteditor-input{
+  @apply m-1;
+}
+
+//Icons----------------------------------------------------------------------
+
+.dx-show-clear-button .dx-icon-clear{
+  @apply text-secondary-light dark:text-secondary-dark hover:text-accent-secondary hover:scale-125;
+  @apply transition transition-colors transition-transform duration-150 ease-in-out;
+}
+
+.dx-dropdowneditor.dx-dropdowneditor-active .dx-dropdowneditor-icon{
+  @apply text-secondary-light dark:text-secondary-dark;
+  @apply bg-accent-middle bg-opacity-0;
+  @apply transition transition-colors transition-transform duration-150 ease-in-out;
+}
+
+.dx-dropdowneditor.dx-state-active .dx-dropdowneditor-icon,
+.dx-dropdowneditor.dx-state-hover:not(.dx-custom-button-hovered) .dx-dropdowneditor-icon{
+  @apply bg-accent-middle bg-opacity-0;
+  @apply text-accent-secondary scale-125;
+  @apply transition transition-colors transition-transform duration-150 ease-in-out;
+}
+
+.dx-daterangebox-separator .dx-icon {
+  @apply text-secondary-light dark:text-secondary-dark;
+  @apply transition transition-colors transition-transform duration-150 ease-in-out;
+}
+
+.dx-texteditor.dx-state-hover .dx-icon {
+  @apply text-accent-secondary scale-125;
+  @apply transition transition-colors transition-transform duration-150 ease-in-out;
+}
+
+.dx-fa-button .dx-fa-button-icon .dx-icon{
+  @apply text-secondary-dark dark:text-secondary-light;
+  @apply transition transition-colors transition-transform duration-150 ease-in-out;
+}
+
+//Notify------------------------------------------------------------------------
+
+.dx-toast-content {
+  @apply m-2 rounded rounded-tl-3xl rounded-br-3xl;
+}
+
+.dx-toast-warning{
+  @apply bg-gradient-to-br from-warning-primary to-warning-middle;
+}
+
+.dx-toast-info{
+  @apply bg-gradient-to-br from-accent-primary to-accent-middle;
+}
+
+.dx-toast-success{
+  @apply bg-gradient-to-br from-success-primary to-success-middle;
+}
+
+//Card------------------------------------------------------------------------
+
+.card{
+  @apply rounded rounded-tl-3xl rounded-br-3xl;
+  @apply bg-gradient-to-r from-secondary-light dark:from-secondary-dark bg-secondary-middle drop-shadow-2xl;
+}
+
+.card-danger{
+  @apply rounded rounded-tl-3xl rounded-br-3xl;
+  @apply bg-gradient-to-r from-primary-light dark:from-primary-dark bg-danger-primary drop-shadow-2xl;
+}
+
+.card-success{
+  @apply rounded rounded-tl-3xl rounded-br-3xl;
+  @apply bg-gradient-to-r from-primary-light dark:from-primary-dark bg-success-primary drop-shadow-2xl;
+}
+
+.card-info{
+  @apply rounded rounded-tl-3xl rounded-br-3xl;
+  @apply bg-gradient-to-r from-primary-light dark:from-primary-dark bg-accent-primary drop-shadow-2xl;
+}
+
+//DropDown------------------------------------------------------------------
+
+.list-item-hover{
+  @apply bg-accent-secondary;
+  @apply transition ease-in-out duration-500 transition-colors;
+}
+
+.dx-selectbox-popup-wrapper .dx-list{
+  @apply bg-primary-light dark:bg-primary-dark;
+  @apply border-0 rounded rounded-tl-2xl rounded-br-2xl;
+}
+
+.dx-dropdownlist-popup-wrapper.dx-popup-wrapper .dx-overlay-content {
+  @apply bg-primary-dark dark:bg-primary-light;
+  @apply border-0 rounded rounded-tl-2xl rounded-br-2xl;
+}
+
+.dx-list-item{
+  @apply bg-gradient-to-br from-primary-light dark:from-primary-dark bg-opacity-0;
+  @apply border-0 rounded rounded-tl-2xl rounded-br-2xl;
+  @apply transition duration-500 transition-colors;
+}
+
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-active {
+  @apply bg-accent-primary bg-opacity-100 ;
+  @apply transition ease-in-out duration-500 transition-colors;
+  @apply text-text-light dark:text-text-dark;
+}
+
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-hover {
+  @extend .list-item-hover;
+}
+
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-list-item-selected {
+  @apply bg-accent-middle
+}
+
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-list-item-selected.dx-state-hover:not(.dx-state-focused) {
+  @extend .list-item-hover;
+}
+//dateRange-------------------------------------------------------------------
+.dx-daterangebox.dx-texteditor.dx-editor-underlined{
+  @apply bg-opacity-0 text-text-light;
+}
+
+.dx-daterangebox.dx-texteditor.dx-editor-outlined{
+  @apply bg-opacity-0 border-2 border-t-0 border-l-0 text-text-light m-0;
+}
+
+.dx-daterangebox.dx-editor-outlined .dx-datebox.dx-end-datebox.dx-editor-outlined,
+.dx-daterangebox.dx-editor-outlined .dx-datebox.dx-start-datebox.dx-editor-outlined {
+  @apply bg-gradient-to-br bg-primary-middle from-primary-light dark:from-primary-dark hover:bg-accent-middle;
+  @apply border-2 border-t-0 border-solid rounded border-secondary-light dark:border-secondary-dark
+  rounded-tl-2xl rounded-br-2xl;
+  @apply transition duration-500 transition-colors;
+}
+
+.dx-texteditor-label {
+  @apply text-placeholderText-light dark:text-placeholderText-dark ml-2;
+}
+
+.dx-texteditor.dx-state-focused .dx-texteditor-label{
+  @apply text-accent-secondary ml-2;
+}
+
+.dx-texteditor.dx-state-hover .dx-texteditor-label{
+  @apply text-accent-middle ml-2;
+}
+
+.dx-texteditor.dx-state-focused .dx-texteditor-label,
+.dx-texteditor.dx-state-focused.dx-state-hover .dx-texteditor-label {
+  @apply text-accent-middle ml-2;
+}
+
+.dx-daterangebox.dx-placeholder{
+  @apply text-placeholderText-light dark:text-placeholderText-dark ml-2;
+}
+
+.dx-calendar-cell.dx-calendar-today span {
+  @apply border-accent-secondary;
+}
+
+.dx-calendar-cell.dx-state-active span {
+  @apply bg-accent-secondary;
+}
+
+.dx-calendar-cell.dx-state-hover span {
+  @apply bg-accent-secondary;
+}
+
+.dx-calendar-cell.dx-calendar-selected-date span {
+  @apply bg-accent-middle;
+}
+
+.dx-calendar-cell.dx-calendar-contoured-date span {
+  @apply bg-accent-secondary;
+}
