@@ -12,7 +12,7 @@ This project was made as a resume, so the priority was to use every popular pack
  - ODM: Mongoose
  - Test: Jest, Postman
 
-## FrontEnd:
+## Frontend:
 - Framework: React
 - styling: Tailwind css
 - Component library: DevExtreme
