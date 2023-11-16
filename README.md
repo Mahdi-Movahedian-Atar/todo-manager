@@ -1,5 +1,5 @@
 # What is the purpose of this project?
-This project was made as a resume, so the priority was to use every popular package as much ass posable.
+This project was created for a resume, so the main focus was on using as many popular packages as possible.
 
 # Tech stack used in this project:
 
